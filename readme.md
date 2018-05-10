@@ -1,13 +1,13 @@
 # Inventory
 ## Intro
 
-This will be an inventory system that will keep track of a users video games, books, and movies. 
+This will be an inventory system that will keep track of a users video games, books, and movies. I may eventually put this project up on the web and actually use it to keep track of all of my books and games. 
 
 
 # Getting started
 ### Installing
 
-
+Download the app and then run like a normal PHP project. 
 
 ### Technology Stack
 
