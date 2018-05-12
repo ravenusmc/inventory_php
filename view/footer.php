@@ -1,6 +1,6 @@
   <footer>
       <p class="font copyright">
-          &copy; <?php echo date("Y"); ?> Cuddy Prison System, Inc.
+          &copy; <?php echo date("Y"); ?> Cuddy Inventory System, Inc.
       </p>
   </footer>
 </body>
