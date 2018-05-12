@@ -13,7 +13,7 @@
 
 <!-- Start of Main Section -->
 <main>
-  <h1><a href='controller'>Enter</a></h1>
+  <h1><a href='category_controller'>Enter</a></h1>
 </main>
 <!-- End of main Section -->
 
