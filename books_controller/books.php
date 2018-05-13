@@ -3,6 +3,7 @@
 
 <header>
   <h1>Books Page</h1>
+  <h3>What Would you Like to Do</h3>
 </header>
 
 <main>
