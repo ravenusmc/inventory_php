@@ -1,11 +1,13 @@
 <?php 
   //This file is for the books section
 
-  // //Pulling in the databases
+  //Pulling in the databases
   require('../model/database.php');
   require('../model/book.php');
+  require('../model/books_db.php');
 
-  // $db = Database::getDB();
+  //Creating the object to deal with the database. 
+  $BookDB = new BookDB();
    
   //Setting a default action 
   $action = filter_input(INPUT_POST, 'action');
@@ -27,7 +29,11 @@
     case 'add_book':
       include('add_book.php');
       break;
+    //This action will allow the user to add a book to the database
     case 'add_book_post':
+
+      //Creating a book object 
+      $book = new Book();
 
       //Getting the user input
       $title = filter_input(INPUT_POST, 'title');
@@ -35,6 +41,16 @@
       $subject = filter_input(INPUT_POST, 'subject');
       $year = filter_input(INPUT_POST, 'year');
       $category = filter_input(INPUT_POST, 'category');
+
+      //Setting the properties of the book object 
+      $book->setTitle($title);
+      $book->setAuthor($author);
+      $book->setSubject($subject);
+      $book->setYear($year);
+      $book->setCategory($category);
+
+      //Calling the addBook method to add the book
+      $BookDB->addBook($book);
 
       header('Location: .?action=books');
       break;

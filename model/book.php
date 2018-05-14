@@ -20,7 +20,7 @@
         $this->title = $value;
     }
 
-    public function getauthor() {
+    public function getAuthor() {
         return $this->author;
     }
 
