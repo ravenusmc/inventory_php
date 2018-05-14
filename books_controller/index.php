@@ -2,7 +2,8 @@
   //This file is for the books section
 
   // //Pulling in the databases
-  // require('../model/database.php');
+  require('../model/database.php');
+  require('../model/book.php');
 
   // $db = Database::getDB();
    
