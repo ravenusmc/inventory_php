@@ -37,7 +37,7 @@
     }
 
     public function getYear() {
-        return $this->subject;
+        return $this->year;
     }
 
     public function setYear($value) {

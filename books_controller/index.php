@@ -58,6 +58,34 @@
     case 'search_books':
       include('search_books.php');
       break;
+    //This action will bring the user to the search by title page 
+    case 'search_by_title':
+      include('search_title.php');
+      break;
+    //This action will bring the user to the search by author page
+    case 'search_by_author':
+      include('search_author.php');
+      break;
+    //This action will bring the user to the search by subject page 
+    case 'search_by_subject':
+      include('search_subject.php');
+      break; 
+    //This action will bring the user to search by year page.
+    case 'search_by_year':
+      include('search_year.php');
+      break;
+    //The actions below this point deal with user searches 
+    case 'title_search':
+
+      //Getting the user input for the title
+      $title = filter_input(INPUT_POST, 'title');
+
+      //Using the search by title method to see if the database contains the book. 
+      $BookDB->searchByTitle($title);
+
+
+      include('title_results.php');
+      break;
   }
 
 ?>

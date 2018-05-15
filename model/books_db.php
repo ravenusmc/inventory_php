@@ -27,6 +27,17 @@
       $statement->closeCursor();
     }
 
+    //This method will search for a book by title
+    public static function searchByTitle($title) {
+
+      $db = Database::getDB();
+
+      $query = 'SELECT title from books
+              WHERE '
+
+
+    }
+
 
   }
 
