@@ -1,0 +1,20 @@
+Code in this file will be scrap code that I used for the project.
+
+// $query = 'SELECT * from books
+//          WHERE title = :title';
+
+// $result = $db->query($query);
+// $books = array();
+
+// foreach ($result as $row) {
+//   $book = new Book();
+//   $book->setTitle($row['title']);
+//   $book->setAuthor($row['author']);
+//   $book->setSubject($row['subject']);
+//   $book->setYear($row['year']);
+//   $book->setCategory($row['category']);
+
+//   $books[] = $book;
+// }
+
+// return $books;

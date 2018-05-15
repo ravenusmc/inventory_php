@@ -32,12 +32,30 @@
 
       $db = Database::getDB();
 
-      $query = 'SELECT title from books
-              WHERE '
+      $query = 'SELECT * from books
+              WHERE title = :title';
+      $statement = $db->prepare($query);
+      $statement->bindValue(':title', $title);
+      $statement->execute();
+      $row = $statement->fetch();
+      $statement->closeCursor();
 
+      $book = new Book();
+
+      $book->setId($row['book_id']);
+      $book->setTitle($row['title']);
+      $book->setAuthor($row['author']);
+      $book->setSubject($row['subject']);
+      $book->setYear($row['year']);
+      $book->setCategory($row['category']);
+
+      return $book; 
 
     }
 
+    public static function searchByAuthor($author){
+      
+    }
 
   }
 

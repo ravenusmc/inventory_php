@@ -81,8 +81,7 @@
       $title = filter_input(INPUT_POST, 'title');
 
       //Using the search by title method to see if the database contains the book. 
-      $BookDB->searchByTitle($title);
-
+      $book = $BookDB->searchByTitle($title);
 
       include('title_results.php');
       break;

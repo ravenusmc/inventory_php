@@ -5,11 +5,20 @@
     private $title, $author, $subject, $year, $category;  
 
     public function __construct() {
+        $this->id = 0;
         $this->title = '';
         $this->author = '';
         $this->subject = '';
         $this->year = 0;
         $this->category = '';
+    }
+
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setId($value) {
+        $this->id = $value;
     }
 
     public function getTitle() {
