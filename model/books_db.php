@@ -53,8 +53,33 @@
 
     }
 
+    //This method will allow the user to search for an author 
     public static function searchByAuthor($author){
+
+      $db = Database::getDB();
+      $books = array();
+
+      $query = 'SELECT * from books
+         WHERE author = :author';
+
+      $statement = $db->prepare($query);
+      $statement->bindValue(':author', $author);
+      $statement->execute();
+      $rows = $statement->fetchAll();
+      $statement->closeCursor();
+
+      foreach ($rows as $row) {
+        $book = new Book();
+        $book->setTitle($row['title']);
+        $book->setAuthor($row['author']);
+        $book->setSubject($row['subject']);
+        $book->setYear($row['year']);
+        $book->setCategory($row['category']);
+
+        $books[] = $book;
+      }
       
+      return $books;
     }
 
   }

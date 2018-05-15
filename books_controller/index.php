@@ -85,6 +85,16 @@
 
       include('title_results.php');
       break;
+    case 'author_search':
+
+      //Getting the user input 
+      $author = filter_input(INPUT_POST, 'author');
+
+      //Searching for all books who were written by the author
+      $books = $BookDB->searchByAuthor($author);
+
+      include('author_results.php');
+      break;
   }
 
 ?>
