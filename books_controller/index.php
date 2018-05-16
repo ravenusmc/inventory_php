@@ -54,7 +54,7 @@
 
       header('Location: .?action=books');
       break;
-    //This action will bring 
+    //This action will bring the user to the search books page
     case 'search_books':
       include('search_books.php');
       break;
@@ -94,6 +94,16 @@
       $books = $BookDB->searchByAuthor($author);
 
       include('author_results.php');
+      break;
+    case 'year_search':
+
+      //Getting the user input
+      $year = filter_input(INPUT_POST, 'year');
+
+      //Searching for a book based on the year 
+      $books = $BookDB->searchByYear($year);
+
+      include('year_results.php');
       break;
   }
 

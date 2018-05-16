@@ -82,6 +82,35 @@
       return $books;
     }
 
+    //This methods gets the results based on the year
+    public static function searchByYear($year){
+
+      $db = Database::getDB();
+      $books = array();
+
+      $query = 'SELECT * from books
+         WHERE year = :year';
+
+      $statement = $db->prepare($query);
+      $statement->bindValue(':year', $year);
+      $statement->execute();
+      $rows = $statement->fetchAll();
+      $statement->closeCursor();
+
+      foreach ($rows as $row) {
+        $book = new Book();
+        $book->setTitle($row['title']);
+        $book->setAuthor($row['author']);
+        $book->setSubject($row['subject']);
+        $book->setYear($row['year']);
+        $book->setCategory($row['category']);
+
+        $books[] = $book;
+      }
+      
+      return $books;
+    }
+
   }
 
 
