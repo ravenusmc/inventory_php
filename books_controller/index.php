@@ -95,6 +95,10 @@
 
       include('author_results.php');
       break;
+    case 'subject_search':
+
+      include('subject_results.php');
+      break;
     case 'year_search':
 
       //Getting the user input
