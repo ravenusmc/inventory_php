@@ -111,6 +111,35 @@
       return $books;
     }
 
+    //This methods gets the results based on the subject
+    public static function searchBySubject($subject){
+
+      $db = Database::getDB();
+      $books = array();
+
+      $query = 'SELECT * from books
+         WHERE subject = :subject';
+
+      $statement = $db->prepare($query);
+      $statement->bindValue(':subject', $subject);
+      $statement->execute();
+      $rows = $statement->fetchAll();
+      $statement->closeCursor();
+
+      foreach ($rows as $row) {
+        $book = new Book();
+        $book->setTitle($row['title']);
+        $book->setAuthor($row['author']);
+        $book->setSubject($row['subject']);
+        $book->setYear($row['year']);
+        $book->setCategory($row['category']);
+
+        $books[] = $book;
+      }
+      
+      return $books;
+    }
+
   }
 
 

@@ -97,6 +97,14 @@
       break;
     case 'subject_search':
 
+      //Getting the user input 
+      $subject = filter_input(INPUT_POST, 'subject');
+
+      $books = $BookDB->searchBySubject($subject);
+
+      
+
+
       include('subject_results.php');
       break;
     case 'year_search':
