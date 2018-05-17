@@ -100,10 +100,8 @@
       //Getting the user input 
       $subject = filter_input(INPUT_POST, 'subject');
 
+      //Searching for all books based on the subject
       $books = $BookDB->searchBySubject($subject);
-
-      
-
 
       include('subject_results.php');
       break;

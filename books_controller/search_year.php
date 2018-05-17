@@ -3,7 +3,7 @@
 
 
 <section>
-  <h3>Please Enter a Year to see what books came out then</h3>
+  <h3>Please Enter a Year</h3>
   <form action="index.php" method="post">
 
     <input type="hidden" name="action" value="year_search" />
