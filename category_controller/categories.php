@@ -1,12 +1,13 @@
 <?php include '../view/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="../assets/css/category.css">
-
-<header>
-  <h1>Categories</h1>
-  <h3>Please Select from the Below</h3>
-</header>
+<link rel="stylesheet" type="text/css" href="../assets/css/generic.css">
 
 <main>
+
+  <div>
+    <h1 class='center'>Categories</h1>
+    <h3>Please Select from the Below</h3>
+  </div>
 
   <div>
     <h1><a href="../books_controller">See Books</a></h1>

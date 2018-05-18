@@ -1,5 +1,5 @@
 /******************************
-The CSS in this file will be for the landing page
+The CSS in this file will be for the category page
 ******************************/
 
 html, body {
@@ -9,15 +9,8 @@ html, body {
 
 main {
   min-height: 85%;
-/*  height: 720px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-main div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
