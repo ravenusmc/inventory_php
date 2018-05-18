@@ -5,15 +5,14 @@
 <link rel="stylesheet" type="text/css" href="./assets/css/generic.css">
 
 
-<!-- Start of Header Section -->
-<header>
-  <h1>Inventory System</h1>
-</header>
-<!-- End of Header Section -->
-
 <!-- Start of Main Section -->
 <main>
-  <h1><a href='category_controller'>Enter</a></h1>
+
+  <div>
+    <h1>Inventory System</h1>
+    <h1><a href='category_controller'>Enter</a></h1>
+  </div>
+  
 </main>
 <!-- End of main Section -->
 
