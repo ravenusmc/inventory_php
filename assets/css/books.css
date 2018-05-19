@@ -1,3 +1,17 @@
 /******************************
 The CSS in this file will be for the books section
 ******************************/
+
+
+
+
+/******************************
+This CSS will cover the add book page
+******************************/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

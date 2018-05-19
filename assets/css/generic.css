@@ -6,6 +6,22 @@ The CSS in this file will be for all the pages
   text-align: center;
 }
 
+.button {
+  background-color: #f78025;
+  border-color: #f78025;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.button:hover {
+  color: #3fdb47;
+}
+
+/******************************
+CSS for specific tags on pages 
+******************************/
+
+
 html, body {
     height: 100%;
     margin: 0;
