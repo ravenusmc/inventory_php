@@ -9,6 +9,7 @@
     <h3>Please Enter Title of the Book To Search For</h3>
   </div>
 
+  <!-- Start of form element -->
   <form action="index.php" method="post">
 
     <input type="hidden" name="action" value="title_search" />
@@ -17,6 +18,7 @@
     <input class='button' type="submit" value="Search By Title" />
 
   </form>
+  <!-- End of form element -->
 
 </main>
 <!-- End of main area -->
