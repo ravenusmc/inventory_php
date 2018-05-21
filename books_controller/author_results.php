@@ -1,17 +1,23 @@
 <?php include '../view/header.php'; ?>
 <link rel="stylesheet" type="text/css" href="../assets/css/books.css">
 
+<!-- Start of main area -->
 <main>
   
-  <h1>Test Author Search</h1>
+  <h1>Author Search Results</h1>
 
-  <?php foreach ($books as $book) : ?>
-    <p><?php echo $book->getTitle(); ?></p>
-    <p><?php echo $book->getAuthor(); ?></p>
-    <p><?php echo $book->getSubject(); ?></p>
-  <?php endforeach; ?>
+  <div class='results_area'>
+    <?php foreach ($books as $book) : ?>
+      <div class='results_card'>
+        <p><?php echo $book->getTitle(); ?></p>
+        <p><?php echo $book->getAuthor(); ?></p>
+        <p><?php echo $book->getSubject(); ?></p>
+      </div>
+    <?php endforeach; ?>
+  </div>
 
 </main>
+<!-- End of main area -->
 
 
 <?php include '../view/footer.php'; ?>

@@ -3,11 +3,13 @@
 
 <main>
   
-  <h3><?php echo $book->getTitle(); ?></h3>
-  <h3><?php echo $book->getAuthor(); ?></h3>
-  <h3><?php echo $book->getSubject(); ?></h3>
-  <h3><?php echo $book->getYear(); ?></h3>
-  <h3><?php echo $book->getCategory(); ?></h3>
+  <div class='single_result'>
+    <h3><?php echo $book->getTitle(); ?></h3>
+    <h3><?php echo $book->getAuthor(); ?></h3>
+    <h3><?php echo $book->getSubject(); ?></h3>
+    <h3><?php echo $book->getYear(); ?></h3>
+    <h3><?php echo $book->getCategory(); ?></h3>
+  </div>
 
 </main>
 

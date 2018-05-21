@@ -4,7 +4,6 @@ The CSS in this file will be for the books section
 
 
 
-
 /******************************
 This CSS will cover the add book page
 ******************************/
@@ -15,3 +14,63 @@ form {
   justify-content: center;
   align-items: center;
 }
+
+/******************************
+This CSS will deal with all the results and how they are 
+displayed
+******************************/
+
+.results_area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.5em;
+}
+
+.results_card {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+.single_result {
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
