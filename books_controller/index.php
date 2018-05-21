@@ -42,6 +42,12 @@
       $year = filter_input(INPUT_POST, 'year');
       $category = filter_input(INPUT_POST, 'category');
 
+      //Lowercasing all of the words in the input that is a string.
+      $title = strtolower($title);
+      $author = strtolower($author);
+      $subject = strtolower($subject);
+      $category = strtolower($category);
+
       //Setting the properties of the book object 
       $book->setTitle($title);
       $book->setAuthor($author);
@@ -80,6 +86,9 @@
       //Getting the user input for the title
       $title = filter_input(INPUT_POST, 'title');
 
+      //Lowercasing all of the words in the string.
+      $title = strtolower($title);
+
       //Using the search by title method to see if the database contains the book. 
       $book = $BookDB->searchByTitle($title);
 
@@ -90,6 +99,9 @@
       //Getting the user input 
       $author = filter_input(INPUT_POST, 'author');
 
+      //Lowercasing all of the words in the string.
+      $author = strtolower($author);
+
       //Searching for all books who were written by the author
       $books = $BookDB->searchByAuthor($author);
 
@@ -99,6 +111,9 @@
 
       //Getting the user input 
       $subject = filter_input(INPUT_POST, 'subject');
+
+      //Lowercasing all of the words in the string.
+      $subject = strtolower($subject);
 
       //Searching for all books based on the subject
       $books = $BookDB->searchBySubject($subject);
