@@ -34,15 +34,15 @@
     }
 
     public function setDirector($value) {
-        $this->author = $value;
+        $this->director = $value;
     }
 
     public function getGenre() {
-        return $this->director;
+        return $this->genre;
     }
 
     public function setGenre($value) {
-        $this->author = $value;
+        $this->genre = $value;
     }
 
 
