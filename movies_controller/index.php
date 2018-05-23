@@ -4,10 +4,10 @@
   //Pulling in the databases
   require('../model/database.php');
   require('../model/movie.php');
-  // require('../model/movie_db.php');
+  require('../model/movie_db.php');
 
   //Creating the object to deal with the database. 
-  //$MovieDB = new movieDB();
+  $MovieDB = new movieDB();
 
   //Setting a default action 
   $action = filter_input(INPUT_POST, 'action');
@@ -53,9 +53,9 @@
       $movie->setYear($year);
 
       //Calling the addBook method to add the book
-      $BookDB->addBook($book);
+      $MovieDB->addMovie($movie);
 
-      header('Location: .?action=books');
+      header('Location: .?action=movies');
       break;
 
   }

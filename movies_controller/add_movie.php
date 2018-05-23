@@ -14,8 +14,8 @@
 
     <!-- The below inputs will deal with getting information for the book -->
     <input placeholder='Title' type='text' name='title' required><br>
-    <input placeholder='Author' type='text' name='director' required><br>
-    <input placeholder='subject' type='text' name='genre' required><br>
+    <input placeholder='Director' type='text' name='director' required><br>
+    <input placeholder='Genre' type='text' name='genre' required><br>
     <input placeholder='year' type='text' name='year' required><br>
 
     <input class='button' type="submit" value="Add Movie" />
