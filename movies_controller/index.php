@@ -3,7 +3,7 @@
 
   //Pulling in the databases
   require('../model/database.php');
-  // require('../model/movie.php');
+  require('../model/movie.php');
   // require('../model/movie_db.php');
 
   //Creating the object to deal with the database. 
@@ -25,10 +25,39 @@
     case 'movies':
       include('movies.php');
       break;
-    //This action will allow the user to add a movie to the database 
+    //This action will allow the user to add a movie to the movie table
     case 'add_movie':
       include('add_movie.php');
       break;
+    //This action will add a movie to the movie table 
+    case 'add_movie_post':
+
+      //Creating a movie object 
+      $movie = new Movie();
+
+      //Getting the user input
+      $title = filter_input(INPUT_POST, 'title');
+      $director = filter_input(INPUT_POST, 'director');
+      $genre = filter_input(INPUT_POST, 'genre');
+      $year = filter_input(INPUT_POST, 'year');
+
+      //Lowercasing all of the words in the input that is a string.
+      $title = strtolower($title);
+      $director = strtolower($director);
+      $genre = strtolower($genre);
+
+      //Setting the properties of the book object 
+      $movie->setTitle($title);
+      $movie->setDirector($director);
+      $movie->setGenre($genre);
+      $movie->setYear($year);
+
+      //Calling the addBook method to add the book
+      $BookDB->addBook($book);
+
+      header('Location: .?action=books');
+      break;
+
   }
 
 
