@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="../assets/css/category.css">
 <link rel="stylesheet" type="text/css" href="../assets/css/generic.css">
 
+<!-- Start of Main Section -->
 <main>
 
   <div>
@@ -21,8 +22,8 @@
     <h1><a href="../games_controller">See Games</a></h1>
   </div>
 
-
 </main>
+<!-- End of Main Section -->
 
 
 <?php include '../view/footer.php'; ?>
