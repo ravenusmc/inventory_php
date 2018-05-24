@@ -59,7 +59,7 @@
       break;
     //This action will bring the user to the search for movies page
     case 'search_movies':
-      include('search_movies.php')
+      include('search_movies.php');
       break;
   }
 
