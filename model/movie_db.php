@@ -24,6 +24,30 @@
       $statement->closeCursor();
     }
 
+    //This method will search for a movie by title 
+    public static function searchByTitle($title) {
+      $db = Database::getDB();
+
+      $query = 'SELECT * from movies
+                WHERE title = :title';
+      $statement = $db->prepare($query);
+      $statement->bindValue(':title', $title);
+      $statement->execute();
+      $row = $statement->fetch();
+      $statement->closeCursor();
+
+      $movie = new Movie();
+
+      $book->setId($row['book_id']);
+      $book->setTitle($row['title']);
+      $book->setDirector($row['director']);
+      $book->setGenre($row['genre']);
+      $book->setYear($row['year']);
+
+      return $movie;
+
+    }
+
 
 
   }
