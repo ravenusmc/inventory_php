@@ -38,11 +38,11 @@
 
       $movie = new Movie();
 
-      $book->setId($row['book_id']);
-      $book->setTitle($row['title']);
-      $book->setDirector($row['director']);
-      $book->setGenre($row['genre']);
-      $book->setYear($row['year']);
+      $movie->setId($row['movie_id']);
+      $movie->setTitle($row['title']);
+      $movie->setDirector($row['director']);
+      $movie->setGenre($row['genre']);
+      $movie->setYear($row['year']);
 
       return $movie;
 

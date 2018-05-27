@@ -15,6 +15,7 @@
 
 <div id="txtHint">
   <b>Movie info will be listed here...</b>
+  <div>
 </div>
 
 </main>
