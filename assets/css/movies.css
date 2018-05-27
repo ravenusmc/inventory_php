@@ -1,0 +1,10 @@
+/******************************
+The CSS in this file will be for the movies section
+******************************/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

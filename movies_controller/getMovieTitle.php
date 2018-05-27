@@ -30,8 +30,10 @@
   $result = mysqli_query($con,$sql);
 
   while($row = mysqli_fetch_array($result)) {
-    echo "<td>" . $row['genre'] . "</td>";
-    echo "<td>" . $row['director'] . "</td>";
+    echo "<p>" . $row['title'] . "</p>";
+    echo "<p>" . $row['director'] . "</p>";
+    echo "<p>" . $row['genre'] . "</p>";
+    echo "<p>" . $row['year'] . "</p>";
   }
 
   mysqli_close($con);

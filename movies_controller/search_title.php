@@ -6,8 +6,12 @@
 
 <form>
   <input id='title' placeholder='Title'><br>
-  <input onclick='getMovieTitle(); return false;' class='button' type="submit" value="Search By Title" />
+  <div>
+    <input onclick='getMovieTitle(); return false;' class='button' type="submit" value="Search By Title" />
+  </div>
 </form>
+
+<br>
 
 <div id="txtHint">
   <b>Movie info will be listed here...</b>

@@ -1,5 +1,5 @@
 <?php include '../view/header.php'; ?>
-<link rel="stylesheet" type="text/css" href="../assets/css/books.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/movies.css">
 
 <!-- Start of main area -->
 <main>
