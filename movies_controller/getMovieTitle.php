@@ -6,6 +6,8 @@
 
 <?php
   
+  //This file will contain the code for the ajax call. 
+  
   //Pulling in the databases
   require('../model/database.php');
   require('../model/movie.php');
@@ -20,7 +22,7 @@
   //Searching for the movie in the database by title
   $movie = $MovieDB->searchByTitle($title);
 
-  //Displaying the results 
+  //Displaying the results from the resturn of the movie object
   echo "<p>" . $movie->getTitle() . "</p>";
   echo "<p>" . $movie->getDirector() . "</p>";
   echo "<p>" . $movie->getGenre() . "</p>";
