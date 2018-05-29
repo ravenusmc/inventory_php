@@ -9,6 +9,9 @@ form {
   align-items: center;
 }
 
-.test {
+.movie_info_box {
+  margin-top: 10px;
   border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
 }

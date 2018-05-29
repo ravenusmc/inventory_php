@@ -2,6 +2,7 @@
 <html>
 <head>
 </head>
+<link rel="stylesheet" type="text/css" href="../assets/css/movies.css">
 <body>
 
 <?php
@@ -23,10 +24,12 @@
   $movie = $MovieDB->searchByTitle($title);
 
   //Displaying the results from the resturn of the movie object
-  echo "<p>" . $movie->getTitle() . "</p>";
-  echo "<p>" . $movie->getDirector() . "</p>";
-  echo "<p>" . $movie->getGenre() . "</p>";
-  echo "<p>" . $movie->getYear() . "</p>";
+  echo "<div class='movie_info_box'>";
+  echo "<p>" . "Title: " . $movie->getTitle() . "</p>";
+  echo "<p>" . "Director: " . $movie->getDirector() . "</p>";
+  echo "<p>" . "Genre: " . $movie->getGenre() . "</p>";
+  echo "<p>" . "Year: ". $movie->getYear() . "</p>";
+  echo "</div>";
   
   
   //This way works
