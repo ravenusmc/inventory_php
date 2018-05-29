@@ -48,6 +48,33 @@
 
     }
 
+    //This method will allow the user to search for movies by a certain director.
+    public static function searchByDirector($director){
+
+      $db = Database::getDB();
+      $movies = array();
+
+      $query = 'SELECT * from movies
+         WHERE director = :director';
+
+      $statement = $db->prepare($query);
+      $statement->bindValue(':director', $director);
+      $statement->execute();
+      $rows = $statement->fetchAll();
+      $statement->closeCursor();
+
+      foreach ($rows as $row) {
+        $movie = new Movie();
+        $movie->setTitle($row['title']);
+        $movie->setDirector($row['director']);
+        $movie->setGenre($row['genre']);
+        $movie->setYear($row['year']);
+
+        $movies[] = $movie;
+      }
+      
+      return $movies;
+    }
 
 
   }

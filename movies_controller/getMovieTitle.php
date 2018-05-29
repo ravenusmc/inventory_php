@@ -30,29 +30,6 @@
   echo "<p>" . "Genre: " . $movie->getGenre() . "</p>";
   echo "<p>" . "Year: ". $movie->getYear() . "</p>";
   echo "</div>";
-  
-  
-  //This way works
-
-  // $title = $_GET['q'];
-
-  // $con = mysqli_connect('localhost','root','root','inventory');
-  // if (!$con) {
-  //     die('Could not connect: ' . mysqli_error($con));
-  // }
-
-  // mysqli_select_db($con,"ajax_demo");
-  // $sql="SELECT * FROM movies WHERE title = '".$title."'";
-  // $result = mysqli_query($con,$sql);
-
-  // while($row = mysqli_fetch_array($result)) {
-  //   echo "<p>" . $row['title'] . "</p>";
-  //   echo "<p>" . $row['director'] . "</p>";
-  //   echo "<p>" . $row['genre'] . "</p>";
-  //   echo "<p>" . $row['year'] . "</p>";
-  // }
-
-  // mysqli_close($con);
 
 ?>
 

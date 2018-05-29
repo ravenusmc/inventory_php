@@ -65,6 +65,10 @@
     case 'search_by_title':
       include('search_title.php');
       break;
+    //This action will bring the user to the page to search for movies by director
+    case 'search_by_director':
+      include('search_director.php');
+      break;
   }
 
 
