@@ -16,7 +16,7 @@
   </div>
 
   <div>
-    <h3><a href="?action=search_by_subject">Genre</a></h3>
+    <h3><a href="?action=search_by_genre">Genre</a></h3>
   </div>
 
   <div>

@@ -69,6 +69,10 @@
     case 'search_by_director':
       include('search_director.php');
       break;
+    //This action will bring the user to the page to search for genre by director
+    case 'search_by_genre':
+      include('search_genre.php');
+      break;
   }
 
 
