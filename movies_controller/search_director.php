@@ -2,7 +2,7 @@
 
 <main>
 
-<h1>Search for Movie By Director</h1>
+<h1 class='director_heading'>Search for Movie By Director</h1>
 
 <form>
   <input id='director' placeholder='Director'><br>

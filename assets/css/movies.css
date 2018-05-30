@@ -16,8 +16,11 @@ form {
   padding: 10px;
 }
 
+/******************************
+CSS in this area will be for the directors search page
+******************************/
+
 .director_info_div {
-  border: 2px solid blue;
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 1fr 1fr 1fr;
@@ -25,6 +28,25 @@ form {
 
 .director_info_area {
   margin-top: 10px;
-  border: 2px solid blue;
+  border: 2px solid black;
   border-radius: 8px;
+  padding: 10px;
+}
+
+/******************************
+Media Queries 
+******************************/
+
+@media only all and (max-width: 768px) {
+
+  .director_heading {
+    text-align: center;
+  }
+
+  .director_info_div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+
 }
