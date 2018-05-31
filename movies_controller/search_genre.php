@@ -2,21 +2,21 @@
 
 <main>
 
-<h1>Search for Movie By Genre</h1>
+  <h1>Search for Movie By Genre</h1>
 
-<form>
-  <input id='genre' placeholder='Genre'><br>
-  <div>
-    <input onclick='getMovieByGenre(); return false;' class='button' type="submit" value="Search By Genre" />
-  </div>
-</form>
+  <form>
+    <input id='genre' placeholder='Genre'><br>
+    <div>
+      <input onclick='getMovieByGenre(); return false;' class='button' type="submit" value="Search By Genre" />
+    </div>
+  </form>
 
-<br>
+  <br>
 
-<div id="txtHint">
+  <div id="txtHint">
   <b>Movie info will be listed here...</b>
   <div>
-</div>
+  </div>
 
 </main>
 
