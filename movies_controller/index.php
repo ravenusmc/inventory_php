@@ -73,6 +73,10 @@
     case 'search_by_genre':
       include('search_genre.php');
       break;
+    //This action will bring the user to the page to search for a movie by year
+    case 'search_by_year':
+      include('search_year.php');
+      break;
   }
 
 
