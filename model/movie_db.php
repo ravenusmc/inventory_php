@@ -76,6 +76,34 @@
       return $movies;
     }
 
+    //This method will allow the user to search for a movie based on a year.
+    public static function searchByYear($year) {
+
+      $db = Database::getDB();
+      $movies = array();
+
+      $query = 'SELECT * from movies
+         WHERE year = :year';
+
+      $statement = $db->prepare($query);
+      $statement->bindValue(':year', $year);
+      $statement->execute();
+      $rows = $statement->fetchAll();
+      $statement->closeCursor();
+
+      foreach ($rows as $row) {
+        $movie = new Movie();
+        $movie->setTitle($row['title']);
+        $movie->setDirector($row['director']);
+        $movie->setGenre($row['genre']);
+        $movie->setYear($row['year']);
+
+        $movies[] = $movie;
+      }
+      
+      return $movies;
+    }
+
 
   }
 

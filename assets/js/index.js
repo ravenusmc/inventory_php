@@ -40,3 +40,25 @@ function getMovieByDirector() {
   xmlhttp.send();
 
 };
+
+//This function will get the movie by year 
+function getMovieByYear() {
+
+  //Getting the user input
+  let year = document.getElementById('year').value;
+
+  //Setting up the XML request
+  if (window.XMLHttpRequest) {
+      // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+  } 
+
+  xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+
+  xmlhttp.open("GET", "getMovieYear.php?q="+year, true);
+  xmlhttp.send();
+}
