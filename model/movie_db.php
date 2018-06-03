@@ -110,7 +110,7 @@
       $db = Database::getDB();
       $genres = array();
 
-      $query = 'SELECT genre from movies';
+      $query = 'SELECT DISTINCT genre from movies';
 
       $statement = $db->prepare($query);
       $statement->execute();
@@ -122,7 +122,7 @@
         $movie->setGenre($row['genre']);
         $genres[] = $movie;
       }
-
+      
       return $genres;
 
     }
