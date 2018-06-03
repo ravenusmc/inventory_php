@@ -106,7 +106,7 @@
 
     //This method will get the genre's so that the user may select on from the database
     public static function getGengre() {
-      
+
       $db = Database::getDB();
       $genres = array();
 
@@ -120,7 +120,6 @@
       foreach ($rows as $row) {
         $movie = new Movie();
         $movie->setGenre($row['genre']);
-
         $genres[] = $movie;
       }
 

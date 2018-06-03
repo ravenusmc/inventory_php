@@ -73,7 +73,6 @@
     case 'search_by_genre':
 
       $genres = $MovieDB->getGengre();
-      
 
       include('search_genre.php');
       break;

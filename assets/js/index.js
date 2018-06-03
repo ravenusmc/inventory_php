@@ -21,6 +21,7 @@ function getMovieTitle() {
 
 //This function will get the movies by director 
 function getMovieByDirector() {
+
   //Getting the user input
   let director = document.getElementById('director').value;
 
@@ -40,6 +41,15 @@ function getMovieByDirector() {
   xmlhttp.send();
 
 };
+
+//This function will get movies based on genre 
+function getMovieByGenre() {
+
+  //Getting the user input
+  let genre = document.getElementById('genre').value;
+
+  console.log(genre);
+}
 
 //This function will get the movie by year 
 function getMovieByYear() {
