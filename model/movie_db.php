@@ -104,6 +104,32 @@
       return $movies;
     }
 
+    //This method will get the genre's so that the user may select on from the database
+    public static function getGengre() {
+      
+      $db = Database::getDB();
+      $genres = array();
+
+      $query = 'SELECT genre from movies';
+
+      $statement = $db->prepare($query);
+      $statement->execute();
+      $rows = $statement->fetchAll();
+      $statement->closeCursor();
+
+      foreach ($rows as $row) {
+        $movie = new Movie();
+        $movie->setGenre($row['genre']);
+
+        $genres[] = $movie;
+      }
+
+      return $genres;
+
+    }
+
+
+
 
   }
 

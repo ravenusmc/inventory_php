@@ -5,8 +5,13 @@
   <h1>Search for Movie By Genre</h1>
 
   <form>
-    <input id='genre' placeholder='Genre'><br>
+    <!-- <input id='genre' placeholder='Genre'><br> -->
     <div>
+      <select name='genre'>
+        
+        <option value=''>dasdad</option>
+      </select>
+
       <input onclick='getMovieByGenre(); return false;' class='button' type="submit" value="Search By Genre" />
     </div>
   </form>

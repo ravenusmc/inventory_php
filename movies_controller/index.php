@@ -71,7 +71,10 @@
       break;
     //This action will bring the user to the page to search for genre by director
     case 'search_by_genre':
-      $genre = getGengre();
+
+      $genres = $MovieDB->getGengre();
+      
+
       include('search_genre.php');
       break;
     //This action will bring the user to the page to search for a movie by year
