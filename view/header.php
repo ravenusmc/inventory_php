@@ -37,11 +37,11 @@
             Movies Area
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="../books_controller/add_book.php">Add Book</a>
-            <a class="dropdown-item" href="../books_controller/search_title.php">Search By Title</a>
-            <a class="dropdown-item" href="../books_controller/search_author.php">Search By Author</a>
-            <a class="dropdown-item" href="../books_controller/search_subject.php">Search By Subject</a>
-            <a class="dropdown-item" href="../books_controller/search_year.php">Search By Year</a>
+            <a class="dropdown-item" href="../movies_controller/add_movie.php">Add Movie</a>
+            <a class="dropdown-item" href="../movies_controller/search_title.php">Search By Title</a>
+            <a class="dropdown-item" href="../movies_controller/search_director.php">Search By Director</a>
+            <a class="dropdown-item" href="../movies_controller/search_genre.php">Search By Genre</a>
+            <a class="dropdown-item" href="../movies_controller/search_year.php">Search By Year</a>
           </div>
         </li>
       </ul>

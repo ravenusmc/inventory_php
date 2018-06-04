@@ -23,6 +23,18 @@
     //Searching for the movie in the database by title
     $movies = $MovieDB->searchByGenre($genre);
 
+    //Displaying the results from the resturn of the movie object
+    echo "<div class='director_info_div'>";
+    foreach ($movies as $movie) {
+      echo "<div class='director_info_area'>";
+      echo "<p>" . "Title: " . $movie->getTitle() . "</p>";
+      echo "<p>" . "Director: " . $movie->getDirector() . "</p>";
+      echo "<p>" . "Genre: " . $movie->getGenre() . "</p>";
+      echo "<p>" . "Year: " . $movie->getYear() . "</p>";
+      echo "</div>";
+    }
+    echo "</div>";
+
 
 
   ?>
