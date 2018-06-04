@@ -104,6 +104,35 @@
       return $movies;
     }
 
+    //This method will search for all movies by a specific genre. 
+    public static function searchByGenre($genre) {
+
+      $db = Database::getDB();
+      $movies = array();
+
+      $query = 'SELECT * from movies
+         WHERE genre = :genre';
+
+      $statement = $db->prepare($query);
+      $statement->bindValue(':genre', $genre);
+      $statement->execute();
+      $rows = $statement->fetchAll();
+      $statement->closeCursor();
+
+      foreach ($rows as $row) {
+        $movie = new Movie();
+        $movie->setTitle($row['title']);
+        $movie->setDirector($row['director']);
+        $movie->setGenre($row['genre']);
+        $movie->setYear($row['year']);
+
+        $movies[] = $movie;
+      }
+      
+      return $movies;
+
+    }
+
     //This method will get the genre's so that the user may select on from the database
     public static function getGengre() {
 

@@ -19,6 +19,7 @@ function getMovieTitle() {
   xmlhttp.send();
 }
 
+
 //This function will get the movies by director 
 function getMovieByDirector() {
 
