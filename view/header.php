@@ -44,6 +44,18 @@
             <a class="dropdown-item" href="../movies_controller/search_year.php">Search By Year</a>
           </div>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Games Area
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="../games_controller/add_game.php">Add Game</a>
+            <a class="dropdown-item" href="../movies_controller/search_title.php">Search By Title</a>
+            <a class="dropdown-item" href="../movies_controller/search_director.php">Search By Director</a>
+            <a class="dropdown-item" href="../movies_controller/search_genre.php">Search By Genre</a>
+            <a class="dropdown-item" href="../movies_controller/search_year.php">Search By Year</a>
+          </div>
+        </li>
       </ul>
     </div>
   </nav>
