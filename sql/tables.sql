@@ -18,3 +18,13 @@ CREATE TABLE movies (
   year INT NOT NULL
 );
 
+
+CREATE TABLE games (
+  game_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(50) NOT NULL,
+  game_rating INT NOT NULL,
+  genre VARCHAR(25) NOT NULL,
+  year INT NOT NULL
+);
+
+
