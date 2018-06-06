@@ -25,6 +25,9 @@
     case 'games':
       include('games.php');
       break;
+    case 'add_game':
+      include('add_game.php');
+      break;
   }
 
 

@@ -9,8 +9,8 @@
   </div>
 
   <div>
-    <h1><a href="?action=add_movie">Add Game</a></h1>
-    <h1><a href="?action=search_movies">Search for Games</a></h1>
+    <h1><a href="?action=add_game">Add Game</a></h1>
+    <h1><a href="?action=search_games">Search for Games</a></h1>
   </div>
 
 </main>
