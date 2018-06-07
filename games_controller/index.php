@@ -25,8 +25,13 @@
     case 'games':
       include('games.php');
       break;
+    //This action brings the user to the page to add a gam
     case 'add_game':
       include('add_game.php');
+      break;
+    //This action brings the user to the page to search for a game
+    case 'search_games':
+      include('search_games.php');
       break;
   }
 

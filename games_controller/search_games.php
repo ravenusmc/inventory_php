@@ -4,7 +4,7 @@
 <main>
 
   <div>
-    <h1>Please Select Method to Search for Movie</h1>
+    <h1>Please Select Method to Search for a Game</h1>
   </div>
 
   <div>
@@ -12,7 +12,7 @@
   </div>
 
   <div>
-    <h3><a href="?action=search_by_director">Director</a></h3>
+    <h3><a href="?action=search_by_rating">Rating</a></h3>
   </div>
 
   <div>
@@ -25,5 +25,6 @@
 
 </main>
 <!-- End of main elements  --> 
+
 
 <?php include '../view/footer.php'; ?>
