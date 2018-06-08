@@ -32,7 +32,7 @@
         return $this->rating;
     }
 
-    public function setDirector($value) {
+    public function setRating($value) {
         $this->rating = $value;
     }
 

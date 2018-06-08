@@ -52,7 +52,7 @@
       $movie->setGenre($genre);
       $movie->setYear($year);
 
-      //Calling the addBook method to add the book
+      //Calling the addMove method to add the move
       $MovieDB->addMovie($movie);
 
       header('Location: .?action=movies');

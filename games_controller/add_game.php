@@ -10,7 +10,7 @@
   <!-- This form will allow the user to add a book -->
   <form action="index.php" method="post">
 
-    <input type="hidden" name="action" value="add_movie_post" />
+    <input type="hidden" name="action" value="add_game_post" />
 
     <!-- The below inputs will deal with getting information for the book -->
     <input placeholder='Title' type='text' name='title' required><br>
