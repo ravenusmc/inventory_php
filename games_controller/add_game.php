@@ -17,8 +17,10 @@
     <input placeholder='Game Rating' type='text' name='rating' required><br>
     <input placeholder='Genre' type='text' name='genre' required><br>
     <input placeholder='Year' type='text' name='year' required><br>
-
-    <input class='button' type="submit" value="Add Game" />
+    <br>
+    <div>
+      <input class='button' type="submit" value="Add Game" />
+    </div>
 
   </form>
   <!-- End of form element -->

@@ -1,5 +1,6 @@
 <?php include '../view/header.php';  ?>
 
+<!-- Main Area -->
 <main>
 
 <h1>Search for Movie By Title</h1>
@@ -19,6 +20,7 @@
 </div>
 
 </main>
+<!-- End of Main Area -->
 
 
 

@@ -1,10 +1,11 @@
 <?php include '../view/header.php'; ?>
+<link rel="stylesheet" type="text/css" href="../assets/css/games.css">
 
 <!-- start of main section --> 
 <main>
 
   <div>
-    <h1>Please Select Method to Search for a Game</h1>
+    <h1 class='center'>Please Select Method to Search for a Game</h1>
   </div>
 
   <div>

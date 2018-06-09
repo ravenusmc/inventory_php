@@ -60,6 +60,10 @@
     case 'search_games':
       include('search_games.php');
       break;
+    //This action will take the user to the page to search for a game by title
+    case 'search_by_title':
+      include('search_title.php');
+      break;
   }
 
 
