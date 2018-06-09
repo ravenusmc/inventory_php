@@ -1,0 +1,16 @@
+/******************************
+The CSS in this file will be for the game pages
+******************************/
+
+/* Media Queries */ 
+@media only all and (max-width: 768px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .title_font_fix {
+    font-size: 20px;
+  }
+
+}

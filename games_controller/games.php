@@ -1,11 +1,12 @@
 <?php include '../view/header.php'; ?>
+<link rel="stylesheet" type="text/css" href="../assets/css/games.css">
 
 <!-- Start of main section -->
 <main>
 
   <div>
     <h1>Games Page</h1>
-    <h3>What Would you Like to Do</h3>
+    <h3 class='title_font_fix'>What Would you Like to Do</h3>
   </div>
 
   <div>
