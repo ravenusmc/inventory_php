@@ -28,9 +28,29 @@
     }
 
     //This method will search for a game based on a title 
-    public static function 
+    public static function searchByTitle($title) {
 
+      $db = Database::getDB();
 
+      $query = 'SELECT * from games
+                WHERE title = :title';
+      $statement = $db->prepare($query);
+      $statement->bindValue(':title', $title);
+      $statement->execute();
+      $row = $statement->fetch();
+      $statement->closeCursor();
+
+      $game = new Game();
+
+      $game->setId($row['game_id']);
+      $game->setTitle($row['title']);
+      $game->setRating($row['rating']);
+      $game->setGenre($row['genre']);
+      $game->setYear($row['year']);
+
+      return $game;
+
+    }
 
 
   }
