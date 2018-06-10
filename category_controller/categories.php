@@ -7,7 +7,7 @@
 
   <div>
     <h1 class='center'>Categories</h1>
-    <h3>Please Select from the Below</h3>
+    <h3 class='center'>Please Select from the Below</h3>
   </div>
 
   <div>
