@@ -52,6 +52,11 @@
 
     }
 
+    //This method will search for a game based on a genre
+    public static function searchByGenre($genre) {
+      
+    }
+
 
   }
 
