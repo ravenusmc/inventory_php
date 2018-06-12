@@ -38,3 +38,8 @@ function getGameGenre() {
   xmlhttp.open("GET", "getGameGenre.php?q="+genre, true);
   xmlhttp.send();
 }
+
+//This function will deal with getting a game(s) by the year
+function getGameByYear() {
+
+}

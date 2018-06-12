@@ -68,6 +68,10 @@
     case 'search_by_genre':
       include('search_genre.php');
       break;
+    //This action will allow the user to search for a game by a year.
+    case 'search_by_year':
+      include('search_year.php');
+      break;
   }
 
 
