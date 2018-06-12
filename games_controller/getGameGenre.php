@@ -22,9 +22,9 @@
     $genre = $_GET['q'];
 
     //Searching for the movie in the database by title
-    $game = $GameDB->searchByGenre($genre);
+    $games = $GameDB->searchByGenre($genre);
 
-    // $game_title = $game->getTitle();
+    //$game_title = $game->getTitle();
 
     //Testing to see if the object comes back with any information. 
     // if (empty($game_title)) {
@@ -39,6 +39,18 @@
     //   echo "<p>" . "Year: ". $game->getYear() . "</p>";
     //   echo "</div>";
     // }
+
+    //Displaying the results from the resturn of the movie object
+    echo "<div class='director_info_div'>";
+    foreach ($games as $game) {
+      echo "<div class='director_info_area'>";
+      echo "<p>" . "Title: " . $game->getTitle() . "</p>";
+      echo "<p>" . "Director: " . $game->getRating() . "</p>";
+      echo "<p>" . "Genre: " . $game->getGenre() . "</p>";
+      echo "<p>" . "Year: " . $game->getYear() . "</p>";
+      echo "</div>";
+    }
+    echo "</div>";
 
 
   ?>
