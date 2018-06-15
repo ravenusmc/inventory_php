@@ -55,7 +55,7 @@ function getGameByYear() {
       }
   };
 
-  // xmlhttp.open("GET", "getGameYear.php?q="+genre, true);
-  // xmlhttp.send();
+  xmlhttp.open("GET", "getGameYear.php?q="+year, true);
+  xmlhttp.send();
 
 }

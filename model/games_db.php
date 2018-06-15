@@ -52,7 +52,7 @@
 
     }
 
-    //This method will search for a game based on a genre
+    //This method will search for games based on a genre
     public static function searchByGenre($genre) {
         $db = Database::getDB();
         $games = array();
@@ -78,6 +78,33 @@
       
       return $games;
     }
+
+    //This method will search for games based on a year 
+    public static function searchByYear($year) {
+
+        $db = Database::getDB();
+        $games = array();
+
+        $query = 'SELECT * from games
+        WHERE year = :year';
+
+        $statement = $db->prepare($query);
+        $statement->bindValue(':year', $year);
+        $statement->execute();
+        $rows = $statement->fetchAll();
+        $statement->closeCursor();
+
+        foreach ($rows as $row) {
+          $game = new Game();
+          $game->setTitle($row['title']);
+          $game->setRating($row['rating']);
+          $game->setGenre($row['genre']);
+          $game->setYear($row['year']);
+
+          $games[] = $game;
+      }
+      return $games;
+    } 
 
 
   }
