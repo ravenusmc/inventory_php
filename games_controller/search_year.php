@@ -22,5 +22,5 @@
 </main>
 <!-- End of Main Section -->
 
-<script type="text/javascript" src='../assets/js/index.js'></script>
+<script type="text/javascript" src='../assets/js/games.js'></script>
 <?php include '../view/footer.php'; ?>
