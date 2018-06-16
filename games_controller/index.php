@@ -64,6 +64,10 @@
     case 'search_by_title':
       include('search_title.php');
       break;
+    //This action will take the user to the page to search for game by rating. 
+    case 'search_by_rating':
+      include('search_rating.php');
+      break;
     //This action will take the user to the page to search for a game by genre
     case 'search_by_genre':
       include('search_genre.php');
