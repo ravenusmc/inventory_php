@@ -1,4 +1,5 @@
 <?php include '../view/header.php'; ?>
+<link rel="stylesheet" type="text/css" href="../assets/css/games.css">
 
 <!-- Start of main section -->
 <main>
