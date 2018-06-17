@@ -59,3 +59,26 @@ function getGameByYear() {
   xmlhttp.send();
 
 }
+
+//This function will deal with getting a game(s) rating 
+function getGameRating() {
+
+  let rating = document.getElementById('rating').value;
+  let choice = document.getElementById('above_or_below').value;
+
+  if (window.XMLHttpRequest) {
+      // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+  } 
+
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("txtHint").innerHTML = this.responseText;
+      }
+  };
+
+  xmlhttp.open("GET", "getGameYear.php?q="+year, true);
+  xmlhttp.send();
+
+
+}

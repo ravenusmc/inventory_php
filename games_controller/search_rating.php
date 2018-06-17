@@ -8,6 +8,10 @@
 
 <form>
   <input id='rating' placeholder='Rating'><br>
+  <select id='above_or_below' name='above_or_below'>
+    <option value='above'>Above</option>
+    <option value='below'>Below</option>
+  </select>
   <br>
   <div>
     <input onclick='getGameRating(); return false;' class='button' type="submit" value="Search By Rating" />
