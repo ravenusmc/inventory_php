@@ -76,8 +76,10 @@ function getGameRating() {
           document.getElementById("txtHint").innerHTML = this.responseText;
       }
   };
+  //xhttp.open("GET", "url?parameter_name="+value + "&parameter_name="+value, true);
+  xmlhttp.open("GET", "getGameRating.php?q="+rating + "&l="+choice, true);
 
-  xmlhttp.open("GET", "getGameYear.php?q="+year, true);
+  // xmlhttp.open("GET", "getGameRating.php?q="+rating + " " + choice, true);
   xmlhttp.send();
 
 

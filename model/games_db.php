@@ -106,6 +106,19 @@
       return $games;
     } 
 
+    //This function will get games based on the rating and if it the rating is above or below 
+    //What the user entered. 
+    public static function searchByRating($rating, $choice) {
+
+        $db = Database::getDB();
+        $games = array();
+
+        
+        $query = 'SELECT * from games
+        WHERE rating >= :rating';
+
+    }
+
 
   }
 
