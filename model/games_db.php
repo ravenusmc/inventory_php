@@ -113,9 +113,35 @@
         $db = Database::getDB();
         $games = array();
 
+        echo $choice;
+
+        if ($choice == 'above') {
+          $query = 'SELECT * from games
+          WHERE rating >= :rating';
+          echo 'Above';
+        }else {
+          $query = 'SELECT * from games
+          WHERE rating <= :rating';
+        }
+
+        $statement = $db->prepare($query);
+        $statement->bindValue(':rating', $rating);
+        $statement->execute();
+        $rows = $statement->fetchAll();
+        $statement->closeCursor();
+
+        foreach ($rows as $row) {
+          $game = new Game();
+          $game->setTitle($row['title']);
+          $game->setRating($row['rating']);
+          $game->setGenre($row['genre']);
+          $game->setYear($row['year']);
+
+          $games[] = $game;
+      }
+      return $games;
+
         
-        $query = 'SELECT * from games
-        WHERE rating >= :rating';
 
     }
 
