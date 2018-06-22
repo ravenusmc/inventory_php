@@ -21,6 +21,7 @@ Download the app and then run like a normal PHP project.
 
 # Issues / Other
 
+The one 'minor' issue in this project so far is the amount of code that is repeated in the javascript files. This is something that will need to be worked on. 
 
 # Preview
 
