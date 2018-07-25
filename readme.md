@@ -25,6 +25,6 @@ The one 'minor' issue in this project so far is the amount of code that is repea
 
 # Preview
 
-To see a video that talks about this project please go here: COMING SOON 
+To see a video that talks about this project please go here: https://www.youtube.com/watch?v=wTbDz-83W3U
 
-Blog entry: COMING SOON 
+Blog entry: https://codingsaga.wordpress.com/2018/07/25/inventory-project/
